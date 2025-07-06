@@ -14,11 +14,13 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    [Clique aqui para realizar o download](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip)
 
 2. **Crie um ambiente virtual:**
+
    ```sh
    python3 -m venv ./venv
    ```
 
 3. **Ative o ambiente virtual:**
+
    - No Linux/Mac:
      ```sh
      source venv/bin/activate
@@ -29,11 +31,13 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
      ```
 
 4. **Instale as dependências:**
+
    ```sh
    pip install -r requirements.txt
    ```
 
 5. **Execute a aplicação:**
+
    ```sh
    uvicorn app:app --reload
    ```
@@ -46,6 +50,21 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    Aqui você pode testar todos os endpoints da API de forma interativa.
 
 ---
+
+## Autenticando no Google CLoud
+
+```sh
+  gcloud auth login
+  gcloud config set project PROJECT_ID
+  gcloud run deploy --port=8000
+```
+
+Obs.: o PROJECT_ID pode ser encontrado no serviço do "Google Cloud" na lista de projetos.
+
+## Páginas interessantes do Google Cloud
+
+- Artifact Register
+- Cloud Run
 
 ## Estrutura do Projeto
 
